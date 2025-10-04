@@ -24,8 +24,8 @@
             <div class="grid lg:grid-cols-2 gap-8">
               <div class="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                  alt="Featured article"
+                  src="/images/blog/chamomile-tea/cover.webp" 
+                  alt="Trà Hoa Cúc - Táo Đỏ - Kỷ Tử"
                   class="w-full h-80 object-cover"
                 >
                 <div class="absolute top-4 left-4">
@@ -40,28 +40,31 @@
                     {{ currentLang === 'vi' ? 'Sức khỏe' : 'Health' }}
                   </span>
                   <span class="px-3 py-1 bg-text-dark text-cream-white text-xs font-semibold uppercase tracking-wider">
-                    {{ currentLang === 'vi' ? 'Lối sống' : 'Lifestyle' }}
+                    {{ currentLang === 'vi' ? 'Giấc ngủ' : 'Sleep' }}
+                  </span>
+                  <span class="px-3 py-1 bg-text-dark text-cream-white text-xs font-semibold uppercase tracking-wider">
+                    {{ currentLang === 'vi' ? 'Thảo mộc' : 'Herbal' }}
                   </span>
                 </div>
                 <h2 class="text-2xl font-serif font-bold text-text-dark mb-4">
                   {{ currentLang === 'vi' 
-                    ? 'Năm Lý Do Nên Uống Trà Xanh Hàng Ngày' 
-                    : 'Five Reasons to Drink Green Tea Daily' 
+                    ? 'Trà Hoa Cúc – Táo Đỏ – Kỷ Tử: Tách Trà Dịu Êm Cho Giấc Ngủ Bình An' 
+                    : 'Chamomile – Red Date – Goji Berry Tea: A Gentle Cup for Peaceful Sleep' 
                   }}
                 </h2>
                 <p class="text-text-medium mb-6 leading-relaxed">
                   {{ currentLang === 'vi' 
-                    ? 'Trong tinh thần của tất cả những gì xanh lá cây hôm nay, chúng tôi muốn phân tích một số lợi ích sức khỏe của một trong những loại trà cổ điển nhất - TRÀ XANH!' 
-                    : 'In the spirit of all things green today, we wanted to break down some of the health benefits of one of the most classic teas, GREEN tea (and matcha of course)!' 
+                    ? 'Có những buổi tối, sau một ngày dài quay cuồng với công việc và màn hình máy tính, ta chỉ muốn tìm một góc thật yên, buông lỏng vai và hít một hơi thật sâu. Giữa nhịp sống hiện đại, đôi khi chỉ cần một bản nhạc êm dịu du dương cùng một tách trà ấm – chỉ vậy thôi cũng làm cho mọi thứ trở nên giản dị nhưng lại chứa đựng cả sự bình yên.' 
+                    : 'There are evenings when, after a long day of spinning with work and computer screens, we just want to find a quiet corner, relax our shoulders and take a deep breath. In the rhythm of modern life, sometimes just a gentle melody and a warm cup of tea - just that alone makes everything simple yet contains all the peace.' 
                   }}
                 </p>
                 <div class="flex justify-between items-center text-sm text-text-light mb-6">
-                  <span>{{ currentLang === 'vi' ? '3 phút đọc' : '3 min read' }}</span>
-                  <span>{{ currentLang === 'vi' ? '24 Tháng 5, 2022' : 'May 24, 2022' }}</span>
+                  <span>{{ currentLang === 'vi' ? '5 phút đọc' : '5 min read' }}</span>
+                  <span>{{ currentLang === 'vi' ? '26 Tháng 12, 2024' : 'Dec 26, 2024' }}</span>
                 </div>
-                <button class="btn-primary">
+                <router-link to="/blog/tra-hoa-cuc-tao-do-ky-tu" class="btn-primary">
                   {{ currentLang === 'vi' ? 'Đọc thêm' : 'Read More' }}
-                </button>
+                </router-link>
               </div>
             </div>
           </div>
@@ -105,7 +108,10 @@
               </div>
               
               <!-- Read More Button -->
-              <button class="text-text-dark font-semibold hover:text-text-medium transition-colors">
+              <router-link v-if="article.id === 0" to="/blog/tra-hoa-cuc-tao-do-ky-tu" class="text-text-dark font-semibold hover:text-text-medium transition-colors">
+                {{ currentLang === 'vi' ? 'Đọc thêm →' : 'Read More →' }}
+              </router-link>
+              <button v-else class="text-text-dark font-semibold hover:text-text-medium transition-colors">
                 {{ currentLang === 'vi' ? 'Đọc thêm →' : 'Read More →' }}
               </button>
             </div>
@@ -157,6 +163,19 @@ export default {
     const currentLang = inject('currentLang', ref('vi'))
     
     const articles = [
+      {
+        id: 0,
+        title: currentLang.value === 'vi' 
+          ? 'Trà Hoa Cúc – Táo Đỏ – Kỷ Tử: Tách Trà Dịu Êm Cho Giấc Ngủ Bình An' 
+          : 'Chamomile – Red Date – Goji Berry Tea: A Gentle Cup for Peaceful Sleep',
+        description: currentLang.value === 'vi'
+          ? 'Có những buổi tối, sau một ngày dài quay cuồng với công việc và màn hình máy tính, ta chỉ muốn tìm một góc thật yên, buông lỏng vai và hít một hơi thật sâu. Giữa nhịp sống hiện đại, đôi khi chỉ cần một bản nhạc êm dịu du dương cùng một tách trà ấm – chỉ vậy thôi cũng làm cho mọi thứ trở nên giản dị nhưng lại chứa đựng cả sự bình yên.'
+          : 'There are evenings when, after a long day of spinning with work and computer screens, we just want to find a quiet corner, relax our shoulders and take a deep breath. In the rhythm of modern life, sometimes just a gentle melody and a warm cup of tea - just that alone makes everything simple yet contains all the peace.',
+        image: '/images/blog/chamomile-tea/thumbnail.jpg',
+        tags: currentLang.value === 'vi' ? ['Sức khỏe', 'Giấc ngủ', 'Thảo mộc'] : ['Health', 'Sleep', 'Herbal'],
+        readTime: currentLang.value === 'vi' ? '5 phút đọc' : '5 min read',
+        date: currentLang.value === 'vi' ? '26 Tháng 12, 2024' : 'Dec 26, 2024'
+      },
       {
         id: 1,
         title: currentLang.value === 'vi' 

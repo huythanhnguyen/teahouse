@@ -119,3 +119,4 @@ src/assets/pictures/
 - **Structured data**: Product schema, Organization schema
 - **Sitemap**: XML sitemap cho search engines
 
+

@@ -51,3 +51,4 @@ Website sẽ tự động load hình ảnh từ các thư mục này theo đư�
 - `/src/assets/pictures/homepage/products/` - Product grid
 - `/src/assets/pictures/blog/thumbnails/` - Blog thumbnails
 
+

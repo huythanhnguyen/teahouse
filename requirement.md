@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-A premium e-commerce platform specializing in Vietnamese tea, flowers, and herbs, emphasizing heritage storytelling and authentic Vietnamese tea culture. Built with **EverShop** for rapid development and deployment.
+A premium e-commerce platform specializing in Vietnamese tea, flowers, and herbs, emphasizing heritage storytelling and authentic Vietnamese tea culture. Built with node js kiểu static page for rapid development and deployment.
 
 ## Business Focus
 
@@ -92,11 +92,7 @@ A premium e-commerce platform specializing in Vietnamese tea, flowers, and herbs
    - Step-by-step video guides
 
 6. **Shopping Cart & Checkout**
-   - Persistent cart across sessions
-   - Guest checkout option
-   - Multiple payment methods
-   - Order tracking integration
-
+ Sẽ intergrate với ecommerce về phía sau
 ## Technical Approach
 
 ### EverShop Solution
@@ -167,6 +163,3 @@ A premium e-commerce platform specializing in Vietnamese tea, flowers, and herbs
 - **Search Performance**: < 200ms response time
 - **Mobile Score**: 90+ Lighthouse score
 
----
-
-*This document focuses on rapid development using EverShop to minimize custom coding while delivering a premium Vietnamese tea e-commerce experience.*

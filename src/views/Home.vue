@@ -17,22 +17,24 @@
               </h3>
             </div>
             
-            <p class="text-body leading-relaxed animate-stagger-3">
+            <p class="text-body leading-relaxed animate-stagger-3 mb-8">
               {{ currentLang === 'vi' 
                 ? 'Chúng tôi là một đơn vị chuyên về các loại trà thảo dược cũng như trà đặc biệt của Việt Nam. Với niềm đam mê và kinh nghiệm lâu năm trong lĩnh vực trà, chúng tôi cam kết mang đến những sản phẩm trà chất lượng cao, kết hợp giữa truyền thống và hiện đại. Mỗi loại trà đều được chọn lọc kỹ lưỡng từ những nguyên liệu thiên nhiên tốt nhất, nhằm mang đến cả các yếu tố sức khỏe và các sản phẩm thật sự tốt cho người sành trà.'
                 : 'We are a specialized unit focused on Vietnamese herbal teas and specialty teas. With our passion and years of experience in the tea industry, we are committed to delivering high-quality tea products that combine tradition and modernity. Each tea is carefully selected from the finest natural ingredients, aiming to bring both health benefits and truly excellent products for tea connoisseurs.' }}
             </p>
             
-            <router-link to="/about" class="btn-primary smooth-hover animate-stagger-4">
-              {{ currentLang === 'vi' ? 'Tìm hiểu thêm' : 'Learn More' }}
-            </router-link>
+            <div class="animate-stagger-4">
+              <router-link to="/about" class="btn-primary smooth-hover">
+                {{ currentLang === 'vi' ? 'Tìm hiểu thêm' : 'Learn More' }}
+              </router-link>
+            </div>
           </div>
           
           <!-- Tea Gallery -->
           <div class="relative animate-fadeInRight">
-            <div class="grid grid-cols-2 gap-4">
+            <div class="flex overflow-x-auto gap-4 pb-4">
               <!-- Trà Thảo Dược -->
-              <div class="space-y-4 animate-stagger-1">
+              <div class="flex-shrink-0 w-64 space-y-4 animate-stagger-1">
                 <div class="relative overflow-hidden rounded-lg smooth-hover">
                   <img src="/images/homepage/our-story/an-nhien-tra.jpg" 
                        :alt="currentLang === 'vi' ? 'Trà Thảo Dược' : 'Herbal Teas'" 
@@ -44,7 +46,7 @@
               </div>
               
               <!-- Trà Đặc Sản -->
-              <div class="space-y-4 animate-stagger-2">
+              <div class="flex-shrink-0 w-64 space-y-4 animate-stagger-2">
                 <div class="relative overflow-hidden rounded-lg smooth-hover">
                   <img src="/images/homepage/our-story/tra-mong-rong.jpg" 
                        :alt="currentLang === 'vi' ? 'Trà Đặc Sản' : 'Specialty Teas'" 
@@ -55,12 +57,12 @@
                 </h4>
               </div>
               
-              <!-- Trà Truyền Thống -->
-              <div class="space-y-4 col-span-2 animate-stagger-3">
+              <!-- Nguyên Liệu Truyền Thống -->
+              <div class="flex-shrink-0 w-64 space-y-4 animate-stagger-3">
                 <div class="relative overflow-hidden rounded-lg smooth-hover">
                   <img src="/images/homepage/our-story/nguyen-lieu.jpg" 
                        :alt="currentLang === 'vi' ? 'Nguyên Liệu Truyền Thống' : 'Traditional Ingredients'" 
-                       class="w-full h-32 object-cover transition-transform duration-500 hover:scale-110">
+                       class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110">
                 </div>
                 <h4 class="text-sm font-semibold text-text-dark text-center">
                   {{ currentLang === 'vi' ? 'Nguyên Liệu Truyền Thống' : 'Traditional Ingredients' }}

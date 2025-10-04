@@ -7,6 +7,7 @@ import ShanTuyetPage from '../views/ShanTuyetPage.vue'
 import AboutPage from '../views/AboutPage.vue'
 import ContactPage from '../views/ContactPage.vue'
 import BlogPage from '../views/BlogPage.vue'
+import BlogDetailPage from '../views/BlogDetailPage.vue'
 import GalleryPage from '../views/GalleryPage.vue'
 import ShopPage from '../views/ShopPage.vue'
 
@@ -50,6 +51,11 @@ const routes = [
     path: '/blog',
     name: 'Blog',
     component: BlogPage
+  },
+  {
+    path: '/blog/tra-hoa-cuc-tao-do-ky-tu',
+    name: 'BlogDetail',
+    component: BlogDetailPage
   },
   {
     path: '/gallery',

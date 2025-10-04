@@ -46,10 +46,18 @@
             </p>
             
             <!-- Article Meta -->
-            <div class="flex justify-between items-center text-xs text-text-light">
+            <div class="flex justify-between items-center text-xs text-text-light mb-4">
               <span>{{ article.readTime }}</span>
               <span>{{ article.date }}</span>
             </div>
+            
+            <!-- Read More Button -->
+            <router-link v-if="article.id === 1" to="/blog/tra-hoa-cuc-tao-do-ky-tu" class="text-text-dark font-semibold hover:text-text-medium transition-colors">
+              {{ currentLang === 'vi' ? 'Đọc thêm →' : 'Read More →' }}
+            </router-link>
+            <button v-else class="text-text-dark font-semibold hover:text-text-medium transition-colors">
+              {{ currentLang === 'vi' ? 'Đọc thêm →' : 'Read More →' }}
+            </button>
           </div>
         </article>
       </div>
@@ -76,6 +84,19 @@ export default {
       {
         id: 1,
         title: currentLang.value === 'vi' 
+          ? 'Trà Hoa Cúc – Táo Đỏ – Kỷ Tử: Tách Trà Dịu Êm Cho Giấc Ngủ Bình An' 
+          : 'Chamomile – Red Date – Goji Berry Tea: A Gentle Cup for Peaceful Sleep',
+        description: currentLang.value === 'vi'
+          ? 'Có những buổi tối, sau một ngày dài quay cuồng với công việc và màn hình máy tính, ta chỉ muốn tìm một góc thật yên, buông lỏng vai và hít một hơi thật sâu. Giữa nhịp sống hiện đại, đôi khi chỉ cần một bản nhạc êm dịu du dương cùng một tách trà ấm – chỉ vậy thôi cũng làm cho mọi thứ trở nên giản dị nhưng lại chứa đựng cả sự bình yên.'
+          : 'There are evenings when, after a long day of spinning with work and computer screens, we just want to find a quiet corner, relax our shoulders and take a deep breath. In the rhythm of modern life, sometimes just a gentle melody and a warm cup of tea - just that alone makes everything simple yet contains all the peace.',
+        image: '/images/blog/tra_hoa_cuc_ky_tu_tao_do_co_tac_dung_gi_cach_pha_nhu_the_nao_2_94950fc483.webp',
+        tags: currentLang.value === 'vi' ? ['Sức khỏe', 'Giấc ngủ', 'Thảo mộc'] : ['Health', 'Sleep', 'Herbal'],
+        readTime: '5 phút đọc',
+        date: '26 Tháng 12, 2024'
+      },
+      {
+        id: 2,
+        title: currentLang.value === 'vi' 
           ? 'Năm Lý Do Nên Uống Trà Xanh Hàng Ngày' 
           : 'Five Reasons to Drink Green Tea Daily',
         description: currentLang.value === 'vi'
@@ -87,7 +108,7 @@ export default {
         date: '24 Tháng 5, 2022'
       },
       {
-        id: 2,
+        id: 3,
         title: currentLang.value === 'vi'
           ? '3 Lý Do Chúng Tôi Yêu Thích Trà Yerba Mate'
           : '3 Reasons We Are Obsessed with Yerba Mate Tea',
@@ -96,19 +117,6 @@ export default {
           : 'In the spirit of all things green today, we wanted to break down some of the health benefits of one of the most classic teas, GREEN tea (and matcha of course)!',
         image: '/images/blog/thumbnails/gallery-img-2.jpg',
         tags: currentLang.value === 'vi' ? ['Sức khỏe'] : ['Healthcare'],
-        readTime: '3 phút đọc',
-        date: '24 Tháng 5, 2022'
-      },
-      {
-        id: 3,
-        title: currentLang.value === 'vi'
-          ? 'Cách Trà Có Thể Giúp Bạn Giữ Động Lực Trong Mùa Đông'
-          : 'How Tea Can Help You Stay Motivated This Winter',
-        description: currentLang.value === 'vi'
-          ? 'Thời gian trôi qua thật nhanh khi mùa đông giờ chỉ còn vài tuần nữa. Và chắc chắn, hầu hết mọi người đều háo hức về những kỳ nghỉ sắp tới.'
-          : 'Time is really flying by fast as the winter season is now just a few weeks away. And certainly, almost everyone is excited about the upcoming holiday.',
-        image: '/images/blog/thumbnails/gallery-img-2.jpg',
-        tags: currentLang.value === 'vi' ? ['Công thức'] : ['Recipe'],
         readTime: '3 phút đọc',
         date: '24 Tháng 5, 2022'
       }

@@ -35,7 +35,7 @@
             
             <div class="flex justify-center items-center text-sm text-text-light">
               <span class="mr-4">{{ currentLang === 'vi' ? '5 phút đọc' : '5 min read' }}</span>
-              <span>{{ currentLang === 'vi' ? '26 Tháng 12, 2024' : 'Dec 26, 2024' }}</span>
+              <span>{{ currentLang === 'vi' ? '4 Tháng 10, 2025' : 'Oct 4, 2025' }}</span>
             </div>
           </div>
         </div>

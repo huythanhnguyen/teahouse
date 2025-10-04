@@ -92,7 +92,7 @@ export default {
         image: '/images/blog/tra_hoa_cuc_ky_tu_tao_do_co_tac_dung_gi_cach_pha_nhu_the_nao_2_94950fc483.webp',
         tags: currentLang.value === 'vi' ? ['Sức khỏe', 'Giấc ngủ', 'Thảo mộc'] : ['Health', 'Sleep', 'Herbal'],
         readTime: '5 phút đọc',
-        date: '26 Tháng 12, 2024'
+        date: '4 Tháng 10, 2025'
       },
       {
         id: 2,

@@ -60,7 +60,7 @@
                 </p>
                 <div class="flex justify-between items-center text-sm text-text-light mb-6">
                   <span>{{ currentLang === 'vi' ? '5 phút đọc' : '5 min read' }}</span>
-                  <span>{{ currentLang === 'vi' ? '26 Tháng 12, 2024' : 'Dec 26, 2024' }}</span>
+                  <span>{{ currentLang === 'vi' ? '4 Tháng 10, 2025' : 'Oct 4, 2025' }}</span>
                 </div>
                 <router-link to="/blog/tra-hoa-cuc-tao-do-ky-tu" class="btn-primary">
                   {{ currentLang === 'vi' ? 'Đọc thêm' : 'Read More' }}
@@ -174,7 +174,7 @@ export default {
         image: '/images/blog/tra_hoa_cuc_ky_tu_tao_do_co_tac_dung_gi_cach_pha_nhu_the_nao_2_94950fc483.webp',
         tags: currentLang.value === 'vi' ? ['Sức khỏe', 'Giấc ngủ', 'Thảo mộc'] : ['Health', 'Sleep', 'Herbal'],
         readTime: currentLang.value === 'vi' ? '5 phút đọc' : '5 min read',
-        date: currentLang.value === 'vi' ? '26 Tháng 12, 2024' : 'Dec 26, 2024'
+        date: currentLang.value === 'vi' ? '4 Tháng 10, 2025' : 'Oct 4, 2025'
       },
       {
         id: 1,

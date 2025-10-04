@@ -81,7 +81,7 @@ export default {
         description: currentLang.value === 'vi'
           ? 'Trong tinh thần của tất cả những gì xanh lá cây hôm nay, chúng tôi muốn phân tích một số lợi ích sức khỏe của một trong những loại trà cổ điển nhất - TRÀ XANH!'
           : 'In the spirit of all things green today, we wanted to break down some of the health benefits of one of the most classic teas, GREEN tea (and matcha of course)!',
-        image: '/src/assets/pictures/blog/thumbnails/gallery-img-2.jpg',
+        image: '/images/blog/thumbnails/gallery-img-2.jpg',
         tags: currentLang.value === 'vi' ? ['Sức khỏe', 'Lối sống'] : ['Healthcare', 'Lifestyle'],
         readTime: '3 phút đọc',
         date: '24 Tháng 5, 2022'
@@ -94,7 +94,7 @@ export default {
         description: currentLang.value === 'vi'
           ? 'Trong tinh thần của tất cả những gì xanh lá cây hôm nay, chúng tôi muốn phân tích một số lợi ích sức khỏe của một trong những loại trà cổ điển nhất - TRÀ XANH!'
           : 'In the spirit of all things green today, we wanted to break down some of the health benefits of one of the most classic teas, GREEN tea (and matcha of course)!',
-        image: '/src/assets/pictures/blog/thumbnails/gallery-img-2.jpg',
+        image: '/images/blog/thumbnails/gallery-img-2.jpg',
         tags: currentLang.value === 'vi' ? ['Sức khỏe'] : ['Healthcare'],
         readTime: '3 phút đọc',
         date: '24 Tháng 5, 2022'
@@ -107,7 +107,7 @@ export default {
         description: currentLang.value === 'vi'
           ? 'Thời gian trôi qua thật nhanh khi mùa đông giờ chỉ còn vài tuần nữa. Và chắc chắn, hầu hết mọi người đều háo hức về những kỳ nghỉ sắp tới.'
           : 'Time is really flying by fast as the winter season is now just a few weeks away. And certainly, almost everyone is excited about the upcoming holiday.',
-        image: '/src/assets/pictures/blog/thumbnails/gallery-img-2.jpg',
+        image: '/images/blog/thumbnails/gallery-img-2.jpg',
         tags: currentLang.value === 'vi' ? ['Công thức'] : ['Recipe'],
         readTime: '3 phút đọc',
         date: '24 Tháng 5, 2022'

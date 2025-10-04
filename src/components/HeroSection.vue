@@ -71,11 +71,11 @@ export default {
     
     // Background images array using organized folder structure
     const backgroundImages = [
-      '/src/assets/pictures/homepage/banner/home-slider-background-img.png',
-      '/src/assets/pictures/homepage/banner/tra-hoa-large.jpg',
-      '/src/assets/pictures/homepage/banner/tra-hoa.jpg',
-      '/src/assets/pictures/homepage/banner/tea-set-1.jpg',
-      '/src/assets/pictures/homepage/banner/tra-mat-ong.jpg'
+      '/images/homepage/banner/home-slider-background-img.png',
+      '/images/homepage/banner/tra-hoa-large.jpg',
+      '/images/homepage/banner/tra-hoa.jpg',
+      '/images/homepage/banner/tea-set-1.jpg',
+      '/images/homepage/banner/tra-mat-ong.jpg'
     ]
     
     // Auto-slide functionality

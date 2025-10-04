@@ -34,7 +34,7 @@
               <!-- Trà Thảo Dược -->
               <div class="space-y-4 animate-stagger-1">
                 <div class="relative overflow-hidden rounded-lg smooth-hover">
-                  <img src="/src/assets/pictures/homepage/our-story/an-nhien-tra.jpg" 
+                  <img src="/images/homepage/our-story/an-nhien-tra.jpg" 
                        :alt="currentLang === 'vi' ? 'Trà Thảo Dược' : 'Herbal Teas'" 
                        class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110">
                 </div>
@@ -46,7 +46,7 @@
               <!-- Trà Đặc Sản -->
               <div class="space-y-4 animate-stagger-2">
                 <div class="relative overflow-hidden rounded-lg smooth-hover">
-                  <img src="/src/assets/pictures/homepage/our-story/tra-mong-rong.jpg" 
+                  <img src="/images/homepage/our-story/tra-mong-rong.jpg" 
                        :alt="currentLang === 'vi' ? 'Trà Đặc Sản' : 'Specialty Teas'" 
                        class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110">
                 </div>
@@ -58,7 +58,7 @@
               <!-- Trà Truyền Thống -->
               <div class="space-y-4 col-span-2 animate-stagger-3">
                 <div class="relative overflow-hidden rounded-lg smooth-hover">
-                  <img src="/src/assets/pictures/homepage/our-story/nguyen-lieu.jpg" 
+                  <img src="/images/homepage/our-story/nguyen-lieu.jpg" 
                        :alt="currentLang === 'vi' ? 'Nguyên Liệu Truyền Thống' : 'Traditional Ingredients'" 
                        class="w-full h-32 object-cover transition-transform duration-500 hover:scale-110">
                 </div>
@@ -95,7 +95,7 @@
       <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto text-center">
           <div class="w-20 h-20 bg-cream-white rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
-            <img src="/src/assets/pictures/homepage/our-story/nguyen-lieu.jpg" 
+            <img src="/images/homepage/our-story/nguyen-lieu.jpg" 
                  :alt="currentLang === 'vi' ? 'Chuyên gia trà' : 'Tea Expert'" 
                  class="w-full h-full object-cover">
           </div>
@@ -155,7 +155,7 @@ export default {
         name: currentLang.value === 'vi' ? 'AN NHIÊN' : 'SERENE',
         origin: currentLang.value === 'vi' ? 'Trà Ngủ Ngon Việt Nam' : 'Vietnamese Sleep Tea',
         price: '$28.00',
-        image: '/src/assets/pictures/homepage/products/an-nhien-tra.jpg',
+        image: '/images/homepage/products/an-nhien-tra.jpg',
         link: '/tra-hoa-ngu-ngon'
       },
       {
@@ -163,7 +163,7 @@ export default {
         name: currentLang.value === 'vi' ? 'TỎA SẮC' : 'RADIANT',
         origin: currentLang.value === 'vi' ? 'Trà Dưỡng Nhan Việt Nam' : 'Vietnamese Beauty Tea',
         price: '$32.00',
-        image: '/src/assets/pictures/homepage/banner/tra-hoa.jpg',
+        image: '/images/homepage/banner/tra-hoa.jpg',
         link: '/tra-hoa-duong-nhan'
       },
       {
@@ -171,7 +171,7 @@ export default {
         name: currentLang.value === 'vi' ? 'ẤM VỊ' : 'WARMTH',
         origin: currentLang.value === 'vi' ? 'Trà Gừng Tiêu Hóa Việt Nam' : 'Vietnamese Ginger Tea',
         price: '$24.00',
-        image: '/src/assets/pictures/homepage/products/tra-chanh-mat-ong.jpg',
+        image: '/images/homepage/products/tra-chanh-mat-ong.jpg',
         link: '/tra-gung-tieu-hoa'
       },
       {
@@ -179,7 +179,7 @@ export default {
         name: currentLang.value === 'vi' ? 'SHAN TUYẾT' : 'MOUNTAIN SNOW',
         origin: currentLang.value === 'vi' ? 'Trà Núi Việt Nam' : 'Vietnamese Mountain Tea',
         price: '$45.00',
-        image: '/src/assets/pictures/homepage/banner/tra-hoa-large.jpg',
+        image: '/images/homepage/banner/tra-hoa-large.jpg',
         link: '/shan-tuyet'
       }
     ]

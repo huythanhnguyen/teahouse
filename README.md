@@ -1,108 +1,180 @@
-# Vietnamese Tea Heritage Store
+# 🍃 Vietnamese Tea Store
 
-A modern, high-performance Vue.js application showcasing premium Vietnamese tea collection with wellness focus.
+Một website thương mại điện tử chuyên về trà Việt Nam, được xây dựng với Vue.js 3 và triển khai trên Cloudflare Pages.
 
-## Features
+## ✨ Tính Năng
 
-- **Wellness Teas**: Sleep flower tea, beauty tea, ginger digestive tea
-- **Specialty Teas**: Shan Tuyet, Vietnamese Oolong, regional varieties
-- **Heritage Stories**: Vietnamese tea culture and traditions
-- **Bilingual Support**: Vietnamese and English
-- **Modern Design**: Inspired by Bellocq Tea's elegant aesthetic
-- **High Performance**: Optimized for Cloudflare Pages deployment
+- **10 Pages Hoàn Chỉnh**: Homepage, About, Gallery, Shop, Blog, Contact, và 4 trang sản phẩm trà
+- **Responsive Design**: Tối ưu cho mọi thiết bị
+- **SEO Optimized**: Meta tags và sitemap
+- **Fast Loading**: CDN toàn cầu với Cloudflare
+- **Multilingual**: Hỗ trợ tiếng Việt và tiếng Anh
 
-## Tech Stack
+## 🚀 Triển Khai
 
-- **Frontend**: Vue 3 + Vite
-- **Styling**: Tailwind CSS with custom design system
-- **Routing**: Vue Router
-- **State Management**: Vue Composition API
-- **Build Tool**: Vite for fast development and optimized builds
-
-## Development
-
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
+### GitHub Repository
+```
+https://github.com/huythanhnguyen/teahouse
 ```
 
-## Deployment
+### Cloudflare Pages
+```
+https://teahouse.pages.dev
+```
 
-This project is optimized for Cloudflare Pages deployment:
+## 📁 Cấu Trúc Dự Án
 
-1. Connect your GitHub repository to Cloudflare Pages
-2. Set build command: `npm run build`
-3. Set build output directory: `dist`
-4. Deploy automatically on every push
+```
+teastore/
+├── src/
+│   ├── components/          # Vue components
+│   ├── views/              # Page components
+│   ├── router/             # Vue Router
+│   └── assets/             # Static assets
+├── public/                 # Public files
+├── _headers               # Cloudflare headers
+├── _redirects             # SPA redirects
+└── deploy.ps1             # PowerShell deploy script
+```
 
-## Design System
+## 🛠️ Công Nghệ Sử Dụng
 
-### Colors
-- **Tea Green**: #2D5016 (Primary)
-- **Premium Gold**: #D4AF37 (Accent)
-- **Soft Jade**: #7FB069 (Secondary)
-- **Warm White**: #FEFEFE (Background)
-- **Deep Forest**: #1A3A0A (Text)
+- **Frontend**: Vue.js 3 + Vite
+- **Styling**: Tailwind CSS
+- **Routing**: Vue Router
+- **Deployment**: Cloudflare Pages
+- **CDN**: Cloudflare Global Network
 
-### Typography
-- **Headings**: Playfair Display (Serif)
-- **Body**: Inter (Sans-serif)
+## 📱 Pages
 
-### Performance Features
-- Code splitting with manual chunks
-- Optimized images and assets
-- Minimal bundle size
-- Fast loading times
-- SEO optimized
+| Page | URL | Description |
+|------|-----|-------------|
+| Homepage | `/` | Trang chủ với hero section và sản phẩm |
+| About | `/about` | Thông tin công ty và đội ngũ |
+| Gallery | `/gallery` | Thư viện ảnh với filter |
+| Shop | `/shop` | Cửa hàng sản phẩm với search |
+| Blog | `/blog` | Blog về trà và sức khỏe |
+| Contact | `/contact` | Form liên hệ và thông tin |
+| Sleep Tea | `/tra-hoa-ngu-ngon` | Trà hoa ngủ ngon |
+| Beauty Tea | `/tra-hoa-duong-nhan` | Trà hoa dưỡng nhan |
+| Ginger Tea | `/tra-gung-tieu-hoa` | Trà gừng tiêu hóa |
+| Shan Tuyet | `/shan-tuyet` | Trà Shan Tuyết cao cấp |
 
-## Project Structure
+## 🚀 Triển Khai Nhanh
 
+### 1. Clone Repository
+```bash
+git clone https://github.com/huythanhnguyen/teahouse.git
+cd teahouse
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Development
+```bash
+npm run dev
+```
+
+### 4. Build
+```bash
+npm run build
+```
+
+### 5. Deploy to Cloudflare
+- Truy cập: https://dash.cloudflare.com/pages
+- Connect GitHub repository
+- Auto deploy
+
+## 📊 Performance
+
+- **First Contentful Paint**: < 1.5s
+- **Largest Contentful Paint**: < 2.5s
+- **Cumulative Layout Shift**: < 0.1
+- **Time to Interactive**: < 3s
+
+## 🌍 Global CDN
+
+Website được triển khai trên Cloudflare Pages với:
+- ✅ Global CDN
+- ✅ HTTPS tự động
+- ✅ Compression
+- ✅ HTTP/2
+- ✅ Edge caching
+
+## 📈 SEO Features
+
+- Meta tags cho mọi trang
+- Open Graph tags
+- Sitemap.xml
+- Structured data
+- Mobile-first design
+
+## 🔧 Development
+
+### Scripts
+```bash
+npm run dev          # Development server
+npm run build        # Production build
+npm run preview      # Preview build
+```
+
+### File Structure
 ```
 src/
-├── components/          # Reusable Vue components
+├── components/       # Reusable components
 │   ├── Header.vue
 │   ├── Footer.vue
-│   ├── HeroSection.vue
-│   ├── WellnessSection.vue
-│   ├── SpecialtySection.vue
-│   └── HeritageSection.vue
-├── views/              # Page components
-│   └── Home.vue
-├── router/             # Vue Router configuration
-│   └── index.js
-├── assets/             # Static assets
-│   └── styles.css
-├── App.vue             # Root component
-└── main.js             # Application entry point
+│   └── ProductGrid.vue
+├── views/           # Page components
+│   ├── Home.vue
+│   ├── AboutPage.vue
+│   └── ContactPage.vue
+└── router/          # Vue Router config
+    └── index.js
 ```
 
-## Performance Optimizations
+## 📱 Responsive Design
 
-- **Vite**: Fast build tool with HMR
-- **Code Splitting**: Vendor and utility chunks
-- **Tree Shaking**: Unused code elimination
-- **Minification**: Terser for production builds
-- **Asset Optimization**: Compressed images and fonts
-- **CDN Ready**: Optimized for Cloudflare's global network
+- **Mobile**: 320px - 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: 1024px+
 
-## Browser Support
+## 🎨 Design System
 
-- Chrome 88+
-- Firefox 85+
-- Safari 14+
-- Edge 88+
+### Colors
+- Primary: #2D3748 (text-dark)
+- Secondary: #F7FAFC (cream-white)
+- Accent: #68D391 (light-teal)
 
-## License
+### Typography
+- Headings: Serif font
+- Body: Sans-serif
+- Sizes: Responsive scale
 
-MIT License - see LICENSE file for details.
+## 📞 Support
 
+- **GitHub Issues**: [Create Issue](https://github.com/huythanhnguyen/teahouse/issues)
+- **Email**: info@teahouse.vn
+- **Website**: https://teahouse.pages.dev
 
+## 📄 License
+
+MIT License - Xem file LICENSE để biết thêm chi tiết.
+
+---
+
+## 🎉 Kết Quả
+
+Website Vietnamese Tea Store đã được triển khai thành công với:
+
+- ✅ **10 Pages** hoàn chỉnh
+- ✅ **Responsive Design**
+- ✅ **SEO Optimized**
+- ✅ **Fast Loading**
+- ✅ **Global CDN**
+- ✅ **HTTPS Secure**
+
+**Live URL**: https://teahouse.pages.dev

@@ -10,7 +10,8 @@
       <!-- Product Grid -->
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div v-for="(product, index) in products" :key="product.id" 
-             :class="`product-card group animate-stagger-${index + 1}`">
+             :class="`product-card group animate-stagger-${index + 1} cursor-pointer`"
+             @click="navigateToProduct(product.link)">
           <!-- Product Image -->
           <div class="product-image">
             <img :src="product.image" 
@@ -24,7 +25,7 @@
             <p class="text-small text-text-light mb-4">{{ product.origin }}</p>
             <div class="flex justify-between items-center">
               <span class="text-lg font-semibold text-text-dark">{{ product.price }}</span>
-              <router-link :to="product.link" class="btn-minimal smooth-hover">
+              <router-link :to="product.link" class="btn-minimal smooth-hover" @click.stop>
                 {{ currentLang === 'vi' ? 'Xem chi tiết' : 'View Details' }}
               </router-link>
             </div>
@@ -37,6 +38,7 @@
 
 <script>
 import { inject, ref } from 'vue'
+import { useRouter } from 'vue-router'
 
 export default {
   name: 'ProductGrid',
@@ -52,9 +54,15 @@ export default {
   },
   setup() {
     const currentLang = inject('currentLang', ref('vi'))
+    const router = useRouter()
+    
+    const navigateToProduct = (link) => {
+      router.push(link)
+    }
     
     return {
-      currentLang
+      currentLang,
+      navigateToProduct
     }
   }
 }

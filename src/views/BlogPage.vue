@@ -24,7 +24,7 @@
             <div class="grid lg:grid-cols-2 gap-8">
               <div class="relative">
                 <img 
-                  src="/images/blog/chamomile-tea/cover.webp" 
+                  src="/images/blog/tra_hoa_cuc_ky_tu_tao_do_co_tac_dung_gi_cach_pha_nhu_the_nao_2_94950fc483.webp" 
                   alt="Trà Hoa Cúc - Táo Đỏ - Kỷ Tử"
                   class="w-full h-80 object-cover"
                 >
@@ -171,7 +171,7 @@ export default {
         description: currentLang.value === 'vi'
           ? 'Có những buổi tối, sau một ngày dài quay cuồng với công việc và màn hình máy tính, ta chỉ muốn tìm một góc thật yên, buông lỏng vai và hít một hơi thật sâu. Giữa nhịp sống hiện đại, đôi khi chỉ cần một bản nhạc êm dịu du dương cùng một tách trà ấm – chỉ vậy thôi cũng làm cho mọi thứ trở nên giản dị nhưng lại chứa đựng cả sự bình yên.'
           : 'There are evenings when, after a long day of spinning with work and computer screens, we just want to find a quiet corner, relax our shoulders and take a deep breath. In the rhythm of modern life, sometimes just a gentle melody and a warm cup of tea - just that alone makes everything simple yet contains all the peace.',
-        image: '/images/blog/chamomile-tea/thumbnail.jpg',
+        image: '/images/blog/tra_hoa_cuc_ky_tu_tao_do_co_tac_dung_gi_cach_pha_nhu_the_nao_2_94950fc483.webp',
         tags: currentLang.value === 'vi' ? ['Sức khỏe', 'Giấc ngủ', 'Thảo mộc'] : ['Health', 'Sleep', 'Herbal'],
         readTime: currentLang.value === 'vi' ? '5 phút đọc' : '5 min read',
         date: currentLang.value === 'vi' ? '26 Tháng 12, 2024' : 'Dec 26, 2024'

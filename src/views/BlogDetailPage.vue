@@ -49,7 +49,7 @@
           <!-- Featured Image -->
           <div class="mb-12">
             <img 
-              src="/images/blog/chamomile-tea/cover.webp" 
+              src="/images/blog/tra_hoa_cuc_ky_tu_tao_do_co_tac_dung_gi_cach_pha_nhu_the_nao_2_94950fc483.webp" 
               alt="Trà Hoa Cúc - Táo Đỏ - Kỷ Tử"
               class="w-full h-96 object-cover rounded-lg shadow-lg"
             >
